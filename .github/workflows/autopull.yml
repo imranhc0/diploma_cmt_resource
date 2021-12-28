@@ -1,5 +1,5 @@
 name: Pull Request on Branch Push
-on: [release]
+on: [push]
 jobs:
   pull-request-on-release:
     name: PullRequestAction
