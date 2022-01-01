@@ -5,9 +5,6 @@ window.onload = async function () {
     .then(response => response.json())
     .then(data => {
         data.forEach(el =>  {
-            console.log(el)
-            console.log(el.login)
-            console.log(el.avatar_url)
             const comp = `
             <div class="lg:w-1/3 lg:mb-0 mb-6 p-4 shadow-lg hover:bg-pink-200">
                 <div class="h-full text-center">
@@ -15,7 +12,7 @@ window.onload = async function () {
                 <p class="leading-relaxed"></p>
                 <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
                 <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm"><a target="_blank" href="${el.html_url}">${el.login}</a></h2>
-                <p class="text-gray-500">Develeoper</p>
+                <p class="text-gray-500">Contributor</p>
                 </div>
             </div>`
             htmlElemnt.innerHTML += comp
